@@ -8,7 +8,6 @@ import { Component, OnInit, Output, EventEmitter, Input } from '@angular/core';
            [value]="title"
            placeholder="Add something to do..."
            (keyup.enter)="changeTitle($event.target.value)" 
-           (blur)="cancelEdit($event.target)"
            (keyup.esc)="$event.target.blur()">
          
     <button class="btn" (click)="changeTitle(inputElem.value)">
